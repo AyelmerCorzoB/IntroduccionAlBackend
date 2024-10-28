@@ -289,8 +289,10 @@ UPDATE conductores SET telefono = '555-1006' WHERE conductor_id = 1;
 
 #### Caso de Uso 11: Asignar un Conductor a una Ruta y un Vehículo 
 ````SQL
-INSERT INTO rutas (descripcion, sucursal_id) VALUES ('Ruta Centro CDMX', 1);####
-Caso de Uso 12: Registrar un Nuevo Auxiliar 
+INSERT INTO rutas (descripcion, sucursal_id) VALUES ('Ruta Centro CDMX', 1);
+````
+#### Caso de Uso 12: Registrar un Nuevo Auxiliar 
+````sql
 INSERT INTO auxiliares (nombre, telefono) 
 VALUES ('Laura Martínez', '555-2005');
 ````
@@ -395,7 +397,7 @@ WHERE fecha_envio BETWEEN '2022-01-01' AND '2022-01-31';
 WHERE estado IN ('en_transito', 'entregado');
 ````
 
-#### ZCaso de Uso 3: Obtener Paquetes Excluyendo Ciertos Estados 
+#### Caso de Uso 3: Obtener Paquetes Excluyendo Ciertos Estados 
 ````SQL
 SELECT * FROM paquetes 
 WHERE estado NOT IN ('recibido', 'retenido en aduana');
